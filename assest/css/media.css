@@ -1,0 +1,67 @@
+@media (max-width:576px) {
+
+    .banner-section .banner-img .img-b-1 img {
+        max-width: 100%;
+    }
+
+    .banner-section .banner-img .img-b-2 img {
+        width: 100%;
+    }
+
+    .banner-img-contant {
+        padding: 20px;
+    }
+
+    .banner-section .banner-big-font {
+        font-size: 44px !important;
+    }
+
+}
+
+@media (max-width:768px) {
+    
+    .banner-section .banner-big-font {
+        font-size: 55px;
+    }
+}
+
+
+@media (max-width:992px) {
+    .toggal-menu {
+        display: inline;
+    }
+
+    .main-header ul,
+    .icone-shop {
+        display: none;
+    }
+
+    .banner-section .banner-img-contant {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-section .banner-img .img-b-1 {
+        margin: 90px;
+        bottom: 0;
+        top: 70%;
+
+    }
+
+    .banner-section .banner-img .img-b-2 {
+        width: 100%;
+    }
+
+    .banner-img-contant {
+        padding: 20px;
+    }
+
+    .banner-section .btn {
+        justify-content: center;
+    }
+    /* .about-section .about-contant {
+        display: block;
+    }
+     */
+}

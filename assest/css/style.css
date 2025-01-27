@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+:root {
+    --primary-bg-color: #025048;
+    --secondary-bg-color: #f1f4f1;
+    --main-text-color: #FFFF;
+    --primary-text-color: #025048;
+    --secondary-text-color: #424b4a;
+    --font-family--Work-Sans: "Work Sans";
+}
+
+h1 {
+    font-size: 66px;
+}
+
+a,
+ul,
+li,
+ol {
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family--Work-Sans);
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    transition: all 0.5s;
+}
+
+
+
+.btn-primary:hover {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    border: 0;
+    font-weight: 400;
+}
+
+/* header start */
+.main-header {
+    background-color: var(--primary-bg-color);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.main-header ul {
+    padding: 30px 0px;
+}
+
+
+.main-header ul li a {
+    color: #FFFF;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    font-family: var(--font-family--Work-Sans);
+}
+
+.main-header svg {
+    color: var(--secondary-bg-color);
+}
+
+.toggal-menu {
+    display: none;
+    margin: 20px;
+    border: 1px solid white;
+}
+
+/* header end */
+/* banner start */
+.banner-section {
+    background-color: var(--primary-bg-color);
+}
+
+.banner-section .container {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-section .banner-span {
+    color: var(--main-text-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: var(--font-family--Work-Sans);
+}
+
+.banner-section .banner-big-font {
+    color: var(--main-text-color);
+    font-weight: 100;
+    max-width: 555px;
+}
+
+.banner-section .banner-pera {
+    color: var(--main-text-color);
+    font-weight: 100;
+    font-size: 24px;
+    padding: 15px 0px;
+}
+
+.banner-section .btn-primary {
+    margin: 15px 0px;
+}
+
+.banner-section .banner-img .img-b-1 {
+    position: absolute;
+    content: '';
+    top: 20%;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+.banner-section .banner-img .img-b-2 {
+    position: relative;
+    margin: 15px 0px;
+    margin-bottom: -50px;
+}
+
+/* banner end */
+/* about section start */
+.about-section .about-contant {
+    padding: 150px 0px;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.about-section .about-span {
+    font-size: 14px;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--font-family--Work-Sans)
+}
+
+.about-section .about-img-contant {
+    gap: 80px;
+}
+
+.about-section .about-h2 {
+    font-size: 48px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+.about-section .about-img-contant .about-larg-text {
+    font-size: 24px;
+    color: var(--primary-text-color);
+    padding: 10px 0px ;
+}
+
+.about-section .about-img-contant .about-pera {
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    padding: 20px 0px ;
+}
+
+.about-section .about-img-contant .btn-primary {
+   background-color: var(--primary-bg-color);
+   color: var(--main-text-color);
+}
+/* about section end */
