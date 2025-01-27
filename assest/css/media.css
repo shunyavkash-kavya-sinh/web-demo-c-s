@@ -60,8 +60,12 @@
     .banner-section .btn {
         justify-content: center;
     }
-    /* .about-section .about-contant {
-        display: block;
+    .about-section .about-img-contant {
+       flex-direction: column;
+      
     }
-     */
+    .about-contant{
+        margin: 10px;
+    }
+    
 }

@@ -248,4 +248,7 @@ ol {
    background-color: var(--primary-bg-color);
    color: var(--main-text-color);
 }
+.about-section , .about-small-img-contant{
+    flex-direction: column;
+}
 /* about section end */
