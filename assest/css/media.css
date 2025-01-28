@@ -19,7 +19,7 @@
 }
 
 @media (max-width:768px) {
-    
+
     .banner-section .banner-big-font {
         font-size: 55px;
     }
@@ -60,12 +60,24 @@
     .banner-section .btn {
         justify-content: center;
     }
+
     .about-section .about-img-contant {
-       flex-direction: column;
-      
+        flex-direction: column;
+
     }
-    .about-contant{
+
+    .about-contant {
         margin: 10px;
     }
-    
+
+    .get-contact-page .inform-page {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+
+    .get-contact-page .inform-page .info-1 {
+        width: 80%;
+    }
+
 }
