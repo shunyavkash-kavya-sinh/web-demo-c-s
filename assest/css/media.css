@@ -1,31 +1,3 @@
-@media (max-width:576px) {
-
-    .banner-section .banner-img .img-b-1 img {
-        max-width: 100%;
-    }
-
-    .banner-section .banner-img .img-b-2 img {
-        width: 100%;
-    }
-
-    .banner-img-contant {
-        padding: 20px;
-    }
-
-    .banner-section .banner-big-font {
-        font-size: 44px !important;
-    }
-
-}
-
-@media (max-width:768px) {
-
-    .banner-section .banner-big-font {
-        font-size: 55px;
-    }
-}
-
-
 @media (max-width:992px) {
     .toggal-menu {
         display: inline;
@@ -80,4 +52,132 @@
         width: 80%;
     }
 
+
+    .Products-Category .category-box {
+        flex-direction: column;
+    }
+
+    .Products-Category .category-box .cat-box-1,
+    .cat-box-2 {
+        width: 100%;
+    }
+
+    .Products-Category .category-box .cat-box-1 .cat-img-contant img {
+        width: 100%;
+    }
+
+    .Products-Category .category-box .cat-box-2 {
+        width: 100%;
+        margin: 20px 0px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .Products-Category .category-box .cat-box-2 .cat-img-contant img {
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width:768px) {
+
+    .banner-section .banner-big-font {
+        font-size: 55px;
+    }
+
+    .Products-Category .category-box .cat-box-2 {
+        flex-direction: column;
+        display: block;
+    }
+
+    .add-card-section .add-to-card .all-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fixed-sections .big-banner .big-banner-text {
+        font-size: 38px;
+
+    }
+
+    .fixed-sections .big-banner .big-banner-small {
+        font-size: 18px;
+    }
+    .about-section .about-h2 {
+        font-size: 38px;
+    }
+    .about-section .about-contant {
+       padding: 0;
+    }
+    .Products-Category{
+        padding: 40px 0;
+    }
+  
+    .add-card-section {
+        padding: 50px 0px;
+    }
+    .add-card-section .add-to-card .add-to-text {
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width:576px) {
+
+    .banner-section .banner-img .img-b-1 img {
+        max-width: 100%;
+    }
+
+    .banner-section .banner-img .img-b-2 img {
+        width: 100%;
+    }
+
+    .banner-img-contant {
+        padding: 20px;
+    }
+
+    .banner-section .banner-big-font {
+        font-size: 34px;
+    }
+
+
+    .Products-Category .category-box .cat-box-1 .img-contat-text,
+    .cat-box-2 .img-contat-text {
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #424b4a;
+        font-weight: 500;
+    }
+
+    .Products-Category .category-box .cat-box-1,
+    .img-contant-pera,
+    .cat-box-2 .img-contant-pera {
+        font-size: 14px;
+        font-family: var(--font-family--Work-Sans);
+        color: #424b4a;
+        font-weight: 400;
+    }
+
+    .add-card-section .add-to-card .all-card {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+
+    .fixed-sections .big-banner .big-banner-text {
+        font-size: 24px ;
+
+    }
+
+    .fixed-sections .big-banner .big-banner-small {
+        font-size: 14px ;
+    }
+    .about-section .about-h2 {
+        font-size: 25px;
+    }
+    .Products-Category .category-box .cat-box-1 .cat-larg-text {
+       font-size: 30px;
+    }
+    .add-card-section .add-to-card .add-to-text {
+        font-size: 24px;
+    }
 }

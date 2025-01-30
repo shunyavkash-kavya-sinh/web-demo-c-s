@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,13 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 16px;
 }
-
+::selection{
+    background-color: #025048;
+    color: white;
+}
 .container {
     max-width: 1200px;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     padding: 0px 16px;
 }
@@ -99,6 +102,11 @@ li,
 ol {
     list-style: none;
     text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
 }
 
 .btn-primary {
@@ -207,6 +215,10 @@ ol {
 
 /* banner end */
 /* about section start */
+.about-section {
+    padding: 80px 0px;
+}
+
 .about-section .about-contant {
     padding: 150px 0px;
     flex-direction: column;
@@ -255,8 +267,253 @@ ol {
 
 /* about section end */
 
+/* CERMAICS strat */
+.Products-Category {
+    background-color: var(--secondary-bg-color);
+}
+
+.Products-Category .category-box .cat-box-1 {
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+.Products-Category .category-box {
+    gap: 0px 80px;
+}
+
+.Products-Category .category-box .cat-box-1 .cat-span {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.Products-Category .category-box .cat-box-1 .cat-larg-text {
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    margin: 10px 0px;
+}
+
+.Products-Category .category-box .cat-box-1 .cat-pera-text {
+    color: var(--secondary-text-color);
+    font-family: var(--font-family--Work-Sans);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.Products-Category .category-box .cat-box-1 .cat-img-contant {
+    position: relative;
+    overflow: hidden;
+}
+
+.Products-Category .category-box .cat-box-2 .cat-img-contant {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-contat {
+    padding: 20px;
+    background-color: #FFFF;
+    width: 100%;
+}
+.absoult-contant{
+    position: absolute;
+    padding:20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.Products-Category .category-box .cat-box-2 {
+    flex-direction: column;
+    gap: 50px 0px;
+    margin: -70px 0px;
+}
+
+.Products-Category .category-box .cat-box-1 .img-contat-text,
+.cat-box-2 .img-contat-text {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #424b4a;
+    font-weight: 500;
+}
+
+.Products-Category .category-box .cat-box-1,
+.img-contant-pera,
+.cat-box-2 .img-contant-pera {
+    font-size: 16px;
+    font-family: var(--font-family--Work-Sans);
+    color: #424b4a;
+    font-weight: 400;
+}
+
+/* CERMAICS end */
+
+/* add-to-card start */
+.add-card-section {
+    padding: 150px 0px;
+}
+
+.add-card-section .add-to-card .add-span {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-family--Work-Sans);
+    font-weight: 500;
+}
+
+.add-card-section .add-to-card .all-card {
+    display: grid;
+    gap: 50px 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.add-card-section .add-to-card .add-to-text {
+    color: var(--primary-text-color);
+    font-size: 48px;
+    font-weight: 500;
+    max-width: 900px;
+    padding: 20px 0px;
+}
+
+.add-card-section .add-to-card .card-box .card-img {
+    position: relative;
+    transition: all 5s ease-in;
+}
+
+.add-card-section .add-to-card .card-box .img-icone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding: 15px;
+}
+
+.add-card-section .add-to-card .card-box .card-img .card-img-span a {
+    background-color: #FFFF;
+    width: 55px;
+    height: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: var(--font-family--Work-Sans);
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.555);
+    border: 0;
+    transition: all 1s ease-in-out;
+}
 
 
+.add-card-section .add-to-card .card-box .card-img a svg {
+    background-color: #ffffff4b;
+    width: 35px;
+    height: 35px;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5px;
+    border-radius: 100%;
+    border: 0;
+    padding: 6px;
+    visibility: hidden;
+}
+
+.add-card-section .add-to-card .card-box .card-img:hover svg {
+    visibility: visible;
+}
+
+
+.add-card-section .add-to-card .card-box .card-img svg:hover {
+    background-color: #FFFF;
+}
+
+.add-card-section .add-to-card .card-box .card-box-pera {
+    font-family: var(--font-family--Work-Sans);
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+.add-card-section .add-to-card .card-box .card-box-larg {
+    font-size: 22px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.add-card-section .add-to-card .card-box .card-box-small {
+    font-size: 18px;
+    font-family: var(--font-family--Work-Sans);
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+
+.add-card-section .add-to-card .card-box .card-box-span {
+    font-size: 18px;
+    font-family: var(--font-family--Work-Sans);
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.add-card-section .add-to-card .card-box .star-icoen svg {
+    width: 16px;
+}
+
+/* add-to-card end */
+/* fixed banner strat */
+.fixed-sections {
+    background-image: url(../img/cta-bg.jpg);
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.big-banner {
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    background-color: #FFFF;
+}
+.fixed-sections .big-banner .big-banner-text{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    max-width:900px;
+    color: var(--primary-text-color);
+
+}
+
+.fixed-sections .big-banner .big-banner-small{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    font-weight: 300;
+}
+
+
+.fixed-sections .big-banner .btn-primary{
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    border:1px solid #025048;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+/* fixed banner end */
 
 /*contact-pages start */
 .banner-section .banner-pera-contact {
@@ -431,16 +688,17 @@ ol {
     border: 1px solid black;
 }
 
-.svg-icone-info{
+.svg-icone-info {
     color: var(--primary-text-color);
 }
-.svg-icone-info svg{
-   height: 20px;
-   transition: all 0.5s ease-out;
+
+.svg-icone-info svg {
+    height: 20px;
+    transition: all 0.5s ease-out;
 }
 
-.svg-icone-info svg:hover{
-   color: black;
- }
- 
+.svg-icone-info svg:hover {
+    color: black;
+}
+
 /* get-contact-page end */
